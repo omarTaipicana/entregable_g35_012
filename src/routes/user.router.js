@@ -3,7 +3,7 @@ const express = require('express');
 const userRouter = express.Router();
 
 userRouter.route("/users")
-		.get(getAll)
+                .get(getAll)
         .post(create)
 
 userRouter.route("/users/:id")

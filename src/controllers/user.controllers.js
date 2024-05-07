@@ -44,7 +44,7 @@ const update = catchError(async (req, res) => {
     },
     { where: { id: id }, returning: true }
   );
-  return res.json(user);
+  return res.json(user[1]);
 });
 
 
